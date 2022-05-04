@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews</title>
+    <script src="/scripts/reviews.js"></script>
+    <link rel="stylesheet" href="/stylesheets/restaurantReview.css">
+</head>
+
+<body>
+    <header>
+        <h1>Review Page</h1>
+        <p>Once you have finsished with your reviews, be sure to click save, then download the text file that is
+            generated. Make sure it ends up in the <i>files</i> folder of this directory.
+            If the file already exists, it will need to be replaced.
+        </p>
+    </header>
+    <hr>
+    <main>
+        <h2>Reviews</h2>
+    </main>
+    <hr>
+    <section id="newReviewSection">
+        <h2>Add a new Review:</h2>
+        <form name="New Review Form">
+            <label for="restaurantDropdown">Choose an existing restaurant:</label>
+            <select id="restaurantDropdown">
+                <option value="">Select an Option</option>
+            </select>
+            <label for="restaurantText">Or enter a new one</label>
+            <input type="text" id="restaurantText"><br>
+            <label for="order">What did you get to eat?</label>
+            <input type="text" id="order"><br>
+            <label for="description">Description:</label>
+            <textarea id="description"></textarea><br>
+            <label for="rating">Rating:</label>
+            <input type="text" id="rating"><br>
+            <input type="button" id="submit" value="Submit Review"></input>
+        </form>
+    </section>
+    <hr>
+    <!-- This is part of the saving files portion I had to look up -->
+    <button id='saveReviews'>Save Reviews</button>
+    <a download="info.txt" id="downloadLink" href=""></a>
+</body>
+<footer>
+    <a href="/index.html">Return to Home Page</a>
+</footer>
+</html>
+
+<!-- 
+Requirement 2:
+html attribute names on this page (7 different total):
+    src
+    id
+    type
+    value
+    download
+    for
+    name
+ -->
